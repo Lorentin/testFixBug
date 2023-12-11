@@ -16,6 +16,3 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2.1.0
         with:
           args: 'e846d6f1b118b620f3a6d070be711e951784e262'
-          # Set the sonar.projectBaseDir analysis property
-          projectBaseDir: main
-          
