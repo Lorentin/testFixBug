@@ -15,4 +15,4 @@ jobs:
         # uses: SonarSource/sonarcloud-github-action@e2a1ee7c31ee491f1e09c74535b1c0d3e9f5cd82
         uses: SonarSource/sonarcloud-github-action@v2.1.0
         with:
-          args: 'e846d6f1b118b620f3a6d070be711e951784e262'
+          token: 'e846d6f1b118b620f3a6d070be711e951784e262'
