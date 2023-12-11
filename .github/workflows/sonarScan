@@ -1,0 +1,26 @@
+name: SonarCloud Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@v1
+        with:
+          organization: 'Lorentin'
+          token: 'be440d1b18d5f534d6a4af527c339d672f33434d'
